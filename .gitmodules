@@ -1,0 +1,3 @@
+[submodule "fall2024/wdd130"]
+	path = fall2024/wdd130
+	url = git@github.com:GageDorl/wdd130.git
