@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gage D'Orlando's Homepage</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #334fd9;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        header {
+            background-color: #707070;
+            width: 100%;
+            padding: 30px 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        header h1 {
+            font-size: 3rem;
+            color: #ffffff; /* white */
+        }
+        header p {
+            font-size: 1.5rem;
+            color: #34d03c; /* Bright green */
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 30px;
+            max-width: 1200px;
+        }
+        .passion {
+            background-color: #cacaca;
+            border-radius: 15px;
+            width: 300px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .passion:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+        }
+        .passion h2 {
+            color: #ea6404; /* neon orange */
+            font-size: 2rem;
+        }
+        .passion p {
+            margin-top: 10px;
+            color: #db0396; /* hor pink */
+            font-size: 1.2rem;
+        }
+        .passion img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-top: 15px;
+        }
+        footer {
+            margin-top: 40px;
+            padding: 20px;
+            text-align: center;
+            width: 100%;
+            background-color: #4a4a4a;
+        }
+        footer p {
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to Gage D'Orlando's Page!</h1>
+    <p>Rock Climber | Guitar Player | Adventurer</p>
+</header>
+
+<div class="container">
+    <div class="passion">
+        <h2>Rock Climbing</h2>
+        <p>Nothing beats the rush of a challenging climb! It's also a great workout.</p>
+        <img src="climbing.jpg" alt="Rock Climbing">
+    </div>
+
+    <div class="passion">
+        <h2>Guitar</h2>
+        <p>Music fuels my soul, and the guitar is my instrument of choice.</p>
+        <img src="guitar.jpeg" alt="Guitar">
+    </div>
+</div>
+
+<footer>
+    <p>Created with passion by Gage D'Orlando using ChatGPT</p>
+</footer>
+
+</body>
+</html>
