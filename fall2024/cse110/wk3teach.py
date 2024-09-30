@@ -1,0 +1,10 @@
+import math
+square_side = float(input('What is the length of the side of the square in cm? '))
+print(f'The area of the square is: {square_side**2} cm^2 or {square_side**2/10000} m^2')
+rec_len = float(input('What is the length of the rectangle in cm? '))
+rec_wid = float(input('What is the width of the rectangle in cm? '))
+print(f'The area of the rectangle is: {rec_len*rec_wid} cm^2 or {rec_len*rec_wid/10000} m^2')
+circle_rad = float(input('What is the radius of the circle? '))
+print(f'The area of the circle is: {math.pi*circle_rad**2} cm^2 or {math.pi*circle_rad**2/10000} m^2')
+mega = float(input('Give a length for a square and radius for circle in one measurement: '))
+print(f'The square would have an area of {mega**2}, the circle would have an area of {math.pi*mega**2}, the cube would have a volume of {mega**3} and the sphere would have a volume of {4/3*math.pi*(mega**3)}')
