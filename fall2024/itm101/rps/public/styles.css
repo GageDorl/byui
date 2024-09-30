@@ -1,0 +1,123 @@
+body {
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+}
+
+/* Main container */
+.container {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    max-width: 400px;
+    width: 100%;
+}
+
+.choice{
+    font-size: 100px;
+}
+
+/* Heading styles */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Instruction text */
+p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* Button styling */
+button {
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    margin: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #f77f00;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #d65a00;
+    transform: scale(1.05);
+}
+
+/* Result box */
+.result {
+    font-size: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+/* Animation for showing the result */
+.result p {
+    margin: 10px 0;
+    line-height: 1.5;
+    font-weight: bold;
+    color: #f7f9fc;
+}
+
+#result{
+    font-size: 70px;
+}
+
+/* Responsive styles for mobile */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    button {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+    .choice{
+        font-size: 60px;
+    }
+    .result {
+        font-size: 1.2rem;
+    }
+    #result{
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 1000px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    button {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+    .choice{
+        font-size: 80px;
+    }
+    .result {
+        font-size: 1.2rem;
+    }
+    #result{
+        font-size: 60px;
+    }
+}
