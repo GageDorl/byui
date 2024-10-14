@@ -1,12 +1,4 @@
 import math
-
-
-
-
-
-
-
-
 m = float(input('Welcome to the velocity calculator. Please enter the following:\n\nMass (in kg): '))
 g = float(input('Gravity (in m/s^2, 9.8 for Earth, 24 for Jupiter): '))
 t = float(input('Time (in seconds): '))
@@ -26,15 +18,14 @@ def gravityChoice():
         choice = 'Earth'
         alt = 'Jupiter'
         Valt = vj
+    elif g == 24:
+        V = vj
+        choice = 'Jupiter'
+        alt = 'Earth'
+        Valt = ve
     else:
-        if g == 24:
-            V = vj
-            choice = 'Jupiter'
-            alt = 'Earth'
-            Valt = ve
-        else:
-            g = float(input('Please choose either 9.8 or 24 for gravity: '))
-            gravityChoice()
+        g = float(input('Please choose either 9.8 or 24 for gravity: '))
+        gravityChoice()
 
 print(f'\nThe inner value of c is: {c:.3f}\nThe velocity after {t:.1f} seconds is: {V:.3f} m/s on {choice}, if you had chosen {alt} it would be {Valt:.3f}')
 bm = 6
