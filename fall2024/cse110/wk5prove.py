@@ -68,11 +68,5 @@ def decisionOne(firstPrompt):
         firstPrompt = input('Your options were MATCH or FLASHLIGHT. Try Again.').lower()
         decisionOne(firstPrompt)
 
-    
-
 firstPrompt = input('You are walking through a dark forest and find two items: a MATCH and a FLASHLIGHT. Which one do you want to pick up?').lower()
 decisionOne(firstPrompt)
-    
-
-
-
