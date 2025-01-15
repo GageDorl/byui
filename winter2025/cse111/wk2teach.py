@@ -8,7 +8,7 @@ while True:
     else:
         print(f'Your total is ${subtotal}')
         break
-if (datetime.now().weekday() == 1 or datetime.now().weekday() == 2):
+if (datetime.now().weekday() in (1,2)):
     if subtotal>50:
         print(f'Discount amount: ${subtotal*.1:.2f}')
         subtotal=subtotal*.9
