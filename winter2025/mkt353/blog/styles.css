@@ -1,0 +1,98 @@
+body {
+    background-color: #aabdf1; /* Light blue background */
+    font-family: 'Georgia', serif; /* More professional font */
+    margin: 0;
+    padding: 0;
+}
+
+#countCss {
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #01579b; /* Darker blue */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    font-size: 1.2em; /* Increase font size */
+    width: 100%;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+h3 {
+    font-size: .9em;
+    margin: 0;
+    line-height: 1.4em;
+}
+
+header {
+    background-color: #01579b; /* Darker blue */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    font-size: 1.2em; /* Increase font size */
+}
+
+main {
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 20px;
+    background-color: #ffffff; /* White background for content */
+}
+
+p {
+    margin: 10px 0;
+    line-height: 1.7em;
+}
+
+#post1Input {
+    margin-top: 10px;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 2px; /* Less rounded corners */
+    resize: vertical;
+    box-sizing: border-box;
+}
+
+section {
+    background-color: #ffffff; /* White background */
+    border: 1px solid #e0e0e0; /* Light grey border */
+    border-radius: 4px; /* Less rounded corners */
+    padding: 30px; /* More padding inside the section */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Slightly stronger shadow */
+    line-height: 1.8em; /* Better line spacing */
+    color: #333; /* Darker text color */
+}
+
+section h2 {
+    font-size: 2em; /* Larger heading */
+    margin-bottom: 10px; /* Space below heading */
+    color: #01579b; /* Matching color with header/footer */
+}
+
+section p {
+    margin-bottom: 20px; /* Space between paragraphs */
+}
+
+section img {
+    max-width: 100%; /* Responsive images */
+    border-radius: 4px; /* Less rounded corners for images */
+    margin: 5px 0; /* Space around images */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Slightly stronger shadow */
+}
+
+section blockquote {
+    margin: 20px 0;
+    padding: 10px 20px;
+    background-color: #f9f9f9; /* Light grey background for blockquotes */
+    border-left: 5px solid #01579b; /* Blue border */
+    font-style: italic;
+    color: #555; /* Slightly lighter text color */
+}
