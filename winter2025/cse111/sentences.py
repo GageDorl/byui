@@ -1,8 +1,9 @@
 import random
 
 def main():
-    for thing in range(6):
-        print(make_sentence(random.randint(1, 3), random.choice(["past", "present"])))
+    for i in range(1,3):
+        for j in ['past','present','future']:
+            print(make_sentence(i, j))
 
 
 def make_sentence(quantity, tense):
@@ -13,17 +14,8 @@ def make_sentence(quantity, tense):
     quantity and tense of the verb will match the number
     and tense in the quantity and tense parameters.
     """
-    # Get a determiner.
-    determiner = get_determiner(quantity)
-
-    # Get a noun.
-    noun = get_noun(quantity)
-
-    # Get a verb.
-    verb = get_verb(quantity, tense)
-
     # Build and return the sentence.
-    sentence = f"{determiner.capitalize()} {noun} {verb}."
+    sentence = f"{get_determiner(quantity).capitalize()} {get_adjective()} {get_noun(quantity)} {get_adverb()} {get_verb(quantity, tense)} {get_prepositional_phrase(quantity)}."
     return sentence
 
 
@@ -117,5 +109,41 @@ def get_verb(quantity, tense):
     # Randomly choose and return a verb.
     word = random.choice(words)
     return word
+
+def get_preposition():
+    """Return a randomly chosen preposition
+    from this list of prepositions:
+        "about", "above", "across", "after", "along",
+        "around", "at", "before", "behind", "below",
+        "beyond", "by", "despite", "except", "for",
+        "from", "in", "into", "near", "of",
+        "off", "on", "onto", "out", "over",
+        "past", "to", "under", "with", "without"
+    Return: a randomly chosen preposition.
+    """
+    prepositions = ["about","above","across","after", "along","around", "at", "before", "behind", "below","beyond", "by", "despite", "except", "for","from", "in", "into", "near", "of","off", "on", "onto", "out", "over","past", "to", "under", "with", "without"]
+    return random.choice(prepositions)
+
+def get_prepositional_phrase(quantity):
+    """Build and return a prepositional phrase composed
+    of three words: a preposition, a determiner, and a
+    noun by calling the get_preposition, get_determiner,
+    and get_noun functions.
+
+    Parameter
+        quantity: an integer that determines if the
+            determiner and noun in the prepositional
+            phrase returned from this function should
+            be single or pluaral.
+    Return: a prepositional phrase.
+    """
+    prepositoinal_phrase = f'{get_preposition()} {get_determiner(quantity)} {get_adjective()} {get_noun(quantity)}'
+    return prepositoinal_phrase
+
+def get_adjective():
+    return random.choice(['weird', 'funny', 'scary', 'dumb', 'beautiful', 'gross', 'happy', 'sad', 'angry', 'excited', 'bored', 'nervous', 'calm', 'brave', 'lazy'])
+
+def get_adverb():
+    return random.choice(['quickly', 'slowly', 'carefully', 'easily', 'happily', 'sadly', 'angrily', 'excitedly', 'nervously', 'calmly', 'bravely', 'lazily', 'quietly', 'loudly', 'gracefully'])
 
 main()
