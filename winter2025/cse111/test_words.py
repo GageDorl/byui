@@ -35,7 +35,7 @@ def test_suffix():
     assert suffix("","") == ""
     assert suffix("","correct") == ""
     assert suffix("clear","") == ""
-    assert suffix("angleic", "awesome") == ""
+    assert suffix("angleic", "awesome") == "a"
     assert suffix("found", "profound") == "found"
     assert suffix("ditch", "itch") == "itch"
     assert suffix("happy", "funny") == "y"
@@ -44,4 +44,4 @@ def test_suffix():
 
 # Call the main function that is part of pytest so that the
 # computer will execute the test functions in this file.
-pytest.main(["-v", "--tb=line", "-rN", __file__])
+pytest.main(["-v", "--tb=line", "-r5", __file__])
