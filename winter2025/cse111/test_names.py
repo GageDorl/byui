@@ -7,12 +7,12 @@ def test_make_full_name():
     assert make_full_name("Jane", "Smith") == "Smith; Jane"
 
 def test_extract_family_name():
-    assert extract_family_name("Brown; Sally") == "Brown"
+    assert extract_family_name(make_full_name('Sally', 'Brown')) == "Brown"
     assert extract_family_name("Doe; John") == "Doe"
     assert extract_family_name("Smith; Jane") == "Smith"
 
 def test_extract_given_name():
-    assert extract_given_name("Brown; Sally") == "Sally"
+    assert extract_given_name(make_full_name('Sally','Brown')) == "Sally"
     assert extract_given_name("Doe; John") == "John"
     assert extract_given_name("Smith; Jane") == "Jane"
 
