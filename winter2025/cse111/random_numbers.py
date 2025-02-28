@@ -10,7 +10,7 @@ def main():
 
 def append_random_numbers(numbers_list, quantity=1):
     randomNumbers = []
-    for _ in range(quantity):
+    for i in range(quantity):
        randomNumbers.append(round(random.uniform(0,100),1))
     numbers_list.extend(randomNumbers)
 
