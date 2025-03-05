@@ -12,4 +12,4 @@ SELECT SUBSTRING(product_name, 1, LOCATE(' - ', product_name)) AS 'Product Name 
 
 SELECT * FROM product;
 
-SELECT product_name, CONCAT('$',FORMAT(list_price/3,2, 'C')) AS 'One of 3 payments' FROM product WHERE model_year = 2019;
+SELECT product_name, CONCAT('$',FORMAT(list_price/3,2, 'en_US')) AS 'One of 3 payments' FROM product WHERE model_year = 2019;
