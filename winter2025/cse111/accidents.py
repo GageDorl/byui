@@ -36,7 +36,7 @@ def main():
             exit()
 
         try:
-            if perc_reduc < 0 or perc_reduc > 100:
+            if perc_reduc <= 0 or perc_reduc > 100:
                 raise ValueError
         except ValueError:
             print("Please enter a number between 0 and 100.")

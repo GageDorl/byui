@@ -1,0 +1,42 @@
+CSE 111 Proposal for a Student Chosen Program
+
+    (This is a proposal. All proposals are written with our best
+    knowledge at the beginning of a project. As we progress from the
+    beginning to the end of a project, we gain more knowledge, and we
+    change some of our proposed ideas. This is part of completing any
+    project and is fine.  However, we still must write a proposal so
+    that our teachers or supervisors know what we intend to do. Please
+    answer each of the following questions to the best of your
+    knowledge.)
+
+1. What is the title of your program?
+Diet Planner
+
+2. What real-world problem will your program address or help to solve?
+It will help people get a plan a diet to fit a calculated number of daily macronutrients based on their age, height, weight, and weight goals.
+
+3. What will you learn from developing this program?
+I will learn about GUIs in python, and possibly about using nested functions and lamda functions.
+
+4. What Python modules will your program use?
+I will use csv, customtkinter, probably math, probably request, and pytest.
+    (Some examples are: csv, datetime, functools, matplotlib, math,
+    pandas, pytest, random, requests, and tkinter.)
+
+5. Will you separate your Python program into functions that each
+perform a single task?
+I think I will seperate it to one that calculates metabolism, one that calculates protein needs, one that calculates the total caloric requirements, one that returns the rest of the macros based on the calories left over and then lastly based on this it will reference either an API or a file to find a diet plan that works for them.
+    (Remember that the most reusable functions don't get user input and
+    don't print results but instead have parameters and return a result.
+    Functions that get user input and print results are important and do
+    useful work but are not easily reusable.)
+
+    (Remember also that it's hard to test functions that get user input
+    and print results. It's easy to test functions that don't get user
+    input and don't print results but instead have parameters and return
+    a result. Therefore, you should write most of your program functions
+    to have parameters and return a result.)
+
+6. Will you write test functions to test at least two of your program
+functions?
+Yes
