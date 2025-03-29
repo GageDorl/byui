@@ -223,7 +223,8 @@ FROM sections s
 JOIN courses c ON s.course_id = c.course_id
 JOIN faculty f ON s.faculty_id = f.faculty_id
 JOIN departments d ON c.department_id = d.department_id
-JOIN terms t ON s.term_id = t.term_id;
+JOIN terms t ON s.term_id = t.term_id
+ORDER BY section_id;
 
 INSERT INTO students(first_name, last_name, gender, city, state, birthdate)
 VALUES ('Paul','Miller','M','Dallas','TX', '1996-02-22'),
@@ -254,3 +255,19 @@ VALUES (6, 7),
 (1,3),
 (8,9),
 (10,6);
+
+SELECT e.section_id, e.students_id, first_name, CONCAT('enrolling in ', departments_code," ", courses_num), concat(term_season,' ',term_year), concat('Section ', section_num)
+FROM enrollments e
+JOIN students st ON e.students_id = st.students_id
+JOIN sections s ON e.section_id = s.section_id
+JOIN courses c on s.course_id = c.course_id
+JOIN departments d on c.department_id = d.department_id
+JOIN terms t on s.term_id = t.term_id
+ORDER BY first_name;
+
+DELETE FROM enrollments WHERE section_id = 2 and students_id = 7;
+
+
+INSERT INTO enrollments (section_id, students_id)
+VALUES
+(8,7);
