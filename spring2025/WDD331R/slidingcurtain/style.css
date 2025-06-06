@@ -1,0 +1,50 @@
+.curtain_container{
+    position:relative; /* relative to allow absolute positioning of children */
+    width:800px;/* random width for container */
+    height:600px;/* height for aspect ratio */
+    margin:0 auto; /* center the container */
+    overflow: hidden; /* hide curtains */
+}
+
+.curtain{ /* class rules that apply to both curtains*/
+    position:relative; /* relative to allow z-index */
+    float:left; /* float left to allow side by side */
+    width: 50%; /* each curtain takes half the width */
+    height: 100%; /* full height of container */
+    background-color: #000; /* random color so you know there are curtains */
+    z-index:2; /* z-index to be above the content  and under the checkbox*/
+    transition: transform 0.5s ease-in-out; /* smooth transition for curtain movement */
+}
+
+input[type="checkbox"]{
+    position: absolute; /* abolute so that it doesn't block the curtains */
+    cursor: pointer; /* pointer so you know it's clickable */
+    top:0; /* top of the container */
+    z-index: 3; /* above the curtains */ 
+    width:100%; /* full width of the container */
+    height:100%; /* full height of the container */
+    opacity: 0; /* hide the checkbox */
+}
+
+input[type="checkbox"]:checked ~ .curtain{
+    transform: translateX(0); /* move curtains to the center when the checkbox is checked, which it is by default*/
+}
+
+.curtain_left{
+    transform: translateX(-100%); /* move left curtain to the left */
+}
+
+.curtain_right{
+    transform: translateX(100%); /* move right curtain to the right */
+}
+
+.content{
+    font-family: 'Helvetica', sans-serif;
+    align-content: center; /* center the content */
+    position:absolute; /* absolute so that it doesn't get moved down by the curtains */
+    text-align: center; /* center the text */
+    background-color: lightgray;
+    height:100%; /* full height of the container */
+    width:100%; /* full width of the container */
+    z-index:1; /* underneath the curtains so it can be hidden */
+}

@@ -1,0 +1,53 @@
+CSE 300 Week 02 Report Form
+Informational Interviewing
+
+Name:
+
+List at least 10 questions you could ask in an Informational Interview:
+1. Can you walk me through your career path and how you got into Software Engineering?
+2. What skills or qualities are most important for success in this field?
+3. What are some traits your company looks for in potential hires?
+4. What do you enjoy most about working in this industry?
+5. What is the biggest challenge you found when trying to get into the industry, and how did you get around it?
+6. How has the industry changed since you started, and where do you see it going in the next few years?
+7. What do you wish you had known before getting into the industry?
+8. Are there common career paths or advancement opportunities in this field?
+9. What types of training, education, or certifications are most valuable in your field?
+10. What projects do you think helped you get your job the most, and what are projects that would interest you if a candidate had them?
+
+Respond to the following questions to describe each of the five companies you contacted:
+
+Company 1
+1: Which company did you select? Google
+2: What person did you identify to contact, and what is their job title? Dominique Meeks Gombe, Software Engineer
+3: Did you fill out the top sections of the "Know your professional" document (yes/no)? yes
+4: How did you contact your professional (for example, email, LinkedIn, phone call, etc.)? LinkedIn
+5: Have you received a response yet, if so what did you learn? No
+
+Company 2
+1: Which company did you select? Amazon
+2: What person did you identify to contact, and what is their job title? Raghu Burukunte, Software Engineering Leader
+3: Did you fill out the top sections of the "Know your professional" document (yes/no)? yes
+4: How did you contact your professional (for example, email, LinkedIn, phone call, etc.)? LinkedIn
+5: Have you received a response yet, if so what did you learn? No
+
+Company 3
+1: Which company did you select? Dice
+2: What person did you identify to contact, and what is their job title? Thomas Kabeary, Senior Software Engineer
+3: Did you fill out the top sections of the "Know your professional" document (yes/no)? yes
+4: How did you contact your professional (for example, email, LinkedIn, phone call, etc.)? LinkedIn
+5: Have you received a response yet, if so what did you learn? No
+
+Company 4
+1: Which company did you select? Acorns
+2: What person did you identify to contact, and what is their job title? LeVan Smith, Software Engineer II
+3: Did you fill out the top sections of the "Know your professional" document (yes/no)? yes
+4: How did you contact your professional (for example, email, LinkedIn, phone call, etc.)? LinkedIn
+5: Have you received a response yet, if so what did you learn? No
+
+Company 5
+1: Which company did you select? Avantos.ai
+2: What person did you identify to contact, and what is their job title? Nicholas Cathcart, Software Engineer
+3: Did you fill out the top sections of the "Know your professional" document (yes/no)? yes
+4: How did you contact your professional (for example, email, LinkedIn, phone call, etc.)? LinkedIn
+5: Have you received a response yet, if so what did you learn? No

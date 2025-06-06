@@ -1,0 +1,141 @@
+@import 'https://fonts.googleapis.com/css2?family=Lora';
+
+$body-color: #333;
+$link-color: #666;
+$border-color: #D0D0D0;
+
+@mixin link-styles($base-color: $link-color, $hover-color: #0DF, $active-color: #DEB887, $font-size: null, $text-align: null) {
+    text-decoration: none;
+    color: $base-color;
+    font-family: 'Lora', serif;
+  
+    @if $font-size {
+      font-size: $font-size;
+    }
+    @if $text-align {
+      text-align: $text-align;
+    }
+  
+    &:hover {
+      color: $hover-color;
+    }
+  
+    &:active {
+      color: $active-color;
+    }
+}
+  
+
+body{
+    font-family: Helvetica, Arial, sans-serif;
+    color: $body-color;
+
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Lora', serif;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px auto;
+  
+    a {
+      @include link-styles($base-color: $body-color, $font-size: 1.5em, $text-align: center);
+    }
+}
+
+nav{
+    text-transform: uppercase;
+}
+
+  
+a, a:visited {
+    @include link-styles();
+}
+  
+
+img{
+    width: 100%;
+    height: auto;
+    margin:0 auto;
+}
+
+figure{
+    box-sizing: border-box;
+}
+
+nav{
+
+    ul{
+        list-style: none;
+        padding: 5px;
+        margin: 0 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-top: $border-color solid 2px;
+        border-bottom: $border-color solid 2px;
+        gap: 10px;
+    }
+    li{
+        text-align: center;
+    }
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 0 10px
+}
+
+article{
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.post-date{
+    text-align: right;
+    text-transform: uppercase;
+    padding: 30px 10px 10px 10px;
+    border-bottom: $border-color solid 2px;
+    margin:0;
+}
+
+.post-content figure{
+    width:150px;
+    margin:0 auto;
+}
+
+@media screen and (min-width: 600px){
+
+    nav ul{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        padding-left: 50%;
+    }
+
+    article{
+        display:grid;
+        grid-template-columns: 1fr 3fr;
+        box-sizing: border-box;
+    }
+
+    .post-date{
+        border-bottom: none;
+        border-right: $border-color solid 2px;
+    }
+
+    .post-content{
+        padding: 10px 20px;
+        margin: 0;
+        border-bottom: $border-color solid 2px;
+    }
+
+    article:last-of-type .post-content{
+        border-bottom: none;
+    }
+}
