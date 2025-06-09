@@ -1,45 +1,51 @@
-@import 'https://fonts.googleapis.com/css2?family=Lora';
+@import url('https://fonts.googleapis.com/css2?family=Lora');
+
 body {
   font-family: Helvetica, Arial, sans-serif;
   color: #333;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Lora", serif;
+  font-family: Lora, serif;
 }
 
 h1 {
   text-align: center;
   margin: 20px auto;
 }
+
+a, a:visited {
+  text-decoration: none;
+  color: #666;
+  font-family: Lora, serif;
+}
+
 h1 a {
   text-decoration: none;
   color: #333;
-  font-family: "Lora", serif;
+  font-family: Lora, serif;
   font-size: 1.5em;
   text-align: center;
 }
+
+a:hover, a:visited:hover {
+  color: #0DF;
+}
+
 h1 a:hover {
   color: #0DF;
 }
+
+a:active, a:visited:active {
+  color: #DEB887;
+}
+
 h1 a:active {
   color: #DEB887;
 }
 
 nav {
   text-transform: uppercase;
-}
-
-a, a:visited {
-  text-decoration: none;
-  color: #666;
-  font-family: "Lora", serif;
-}
-a:hover, a:visited:hover {
-  color: #0DF;
-}
-a:active, a:visited:active {
-  color: #DEB887;
 }
 
 img {
@@ -63,6 +69,7 @@ nav ul {
   border-bottom: #D0D0D0 solid 2px;
   gap: 10px;
 }
+
 nav li {
   text-align: center;
 }
@@ -82,7 +89,7 @@ article {
 .post-date {
   text-align: right;
   text-transform: uppercase;
-  padding: 30px 10px 10px 10px;
+  padding: 30px 10px 10px;
   border-bottom: #D0D0D0 solid 2px;
   margin: 0;
 }
@@ -92,7 +99,7 @@ article {
   margin: 0 auto;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (width >= 600px) {
   nav ul {
     flex-direction: row;
     justify-content: center;
@@ -100,20 +107,24 @@ article {
     gap: 20px;
     padding-left: 50%;
   }
+
   article {
     display: grid;
     grid-template-columns: 1fr 3fr;
     box-sizing: border-box;
   }
+
   .post-date {
     border-bottom: none;
     border-right: #D0D0D0 solid 2px;
   }
+
   .post-content {
     padding: 10px 20px;
     margin: 0;
     border-bottom: #D0D0D0 solid 2px;
   }
+
   article:last-of-type .post-content {
     border-bottom: none;
   }

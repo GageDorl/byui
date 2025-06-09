@@ -1,0 +1,9 @@
+
+main.css
+  23:1  ✖  Expected selector "h1 a" to come before selector "a:visited"               no-descending-specificity
+  35:1  ✖  Expected selector "h1 a:hover" to come before selector "a:visited:hover"   no-descending-specificity
+  39:1  ✖  Expected selector "a:active" to come before selector "a:visited:hover"     no-descending-specificity
+  43:1  ✖  Expected selector "h1 a:active" to come before selector "a:visited:hover"  no-descending-specificity
+
+✖ 4 problems (4 errors, 0 warnings)
+
